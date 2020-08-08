@@ -121,7 +121,7 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_string = "  " + holiday_array.join(" ")
           holiday_string = holiday_string + value.join(", ")
           #puts holiday_string
-          print holiday_string
+          puts holiday_string
           # count = 0
           # value.each do |supply|
           #     if count > 0 || count == value.length || value.length == 1
