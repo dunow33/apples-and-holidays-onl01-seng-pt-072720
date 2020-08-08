@@ -113,12 +113,12 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
         puts season.to_s.capitalize! + ":"
         holiday.each do |key, value|
-          holiday_string = key.to_s + ":  "
+          holiday_string = key.to_s + ":"
           holiday_array = holiday_string.split("_")
           holiday_array.each do |holiday_name|
               holiday_name.capitalize!
           end
-          holiday_string = " " + holiday_array.join(" ")
+          holiday_string = "  " + holiday_array.join(" ")
           holiday_string = holiday_string + value.join(", ")
           #puts holiday_string
           puts holiday_string
